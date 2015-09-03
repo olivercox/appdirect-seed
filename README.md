@@ -1,12 +1,10 @@
 ## Synopsis
 
-AppDirect Node.js Seed is an template for integrating applications and services with the AppDirect marketplace platform.
+AppDirect Node.js Seed is an template demonstrating the use of the AppDirect-Express module. It can be used to quickly bootstrap the integration of SaaS applications and services wiht the AppDirect marketplace platform.
+
+See https://github.com/olivercox/appdirect-express for details of the express module used in this template.
 
 For more information on AppDirect see their website http://www.appdirect.com/.
-
-## Motivation
-
-I was tasked with integrating an SaaS application with the AppDirect for distribution on IBM Bluemix Marketplace. The AppDirect documentation is good and improving but there wasn't much in the way of node.js examples. I decided to create this project to provide a quick start integration template for the myself and others.
 
 ## Installation
 
@@ -27,28 +25,14 @@ By default the api will listen on port 3000. You can use the ping tests within t
 
 ## Reference
 
-The template has a pretty simple structure:-
+The template is barebones so as to allow you to go in whatever direction you wish:-
 
     root/
       app.js - The main express application file
       app-direct.config - Config file OAuth credentials
       package.json
-      api/
-        api-auth.js - OAuth helpers for the api
-        api-helpers.js - Helpers for the api
-        api-response.js - Middleware for patching the express response object
       bin/
         www - Application start subscription
-      controllers/ - This is where you put your application specific integration
-        api.js - Simple api ping controllers
-        addons.js - The addon endpoints controller
-        subscription.js - The subscription endpoints controller
-        user.js - The user management endpoints controller
-      routes/
-
-## Tests
-
-Coming soon.
 
 ## Contributors
 
